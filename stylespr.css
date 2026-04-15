@@ -33,3 +33,28 @@ header {
     color: #007bff; 
     font-weight: bold;
 }
+
+/* Navegación superior */
+.top-nav {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+
+.nav-btn {
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 8px 15px;
+    border: 1px solid var(--primary);
+    border-radius: 20px;
+    transition: all 0.3s;
+}
+
+
+.nav-btn:hover {
+    background: var(--primary);
+    color: white;
+}
