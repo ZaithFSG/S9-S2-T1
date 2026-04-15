@@ -57,7 +57,12 @@ body {
   li {
     margin: 10px 0;
   }
-
+  
+  li button {
+    font-size: 12px;
+    padding: 3px 6px;
+    cursor: pointer;
+  }
   a {
     color: #2a6ecb;
     text-decoration: none;
