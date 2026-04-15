@@ -1,19 +1,15 @@
 document.getElementById('contactForm').addEventListener('submit', function(e) {
-    e.preventDefault(); // Evita que la página se recargue
+    e.preventDefault();
 
-    const name = document.getElementById('username').value.trim();
-    const email = document.getElementById('email').value.trim();
+    // Capturar elementos
     const form = document.getElementById('contactForm');
-    const success = document.getElementById('successMessage');
-
-    if (name === "" || email === "") {
-        alert("Por favor, rellena los campos obligatorios.");
-        return;
-    }
-
-    // Simulación de envío
-    console.log("Enviando datos...", { name, email });
-    
-    form.style.display = 'none';
+    const success = document.getElementById('successMessage');    
+    //
+    form.classList.add('hidden');
     success.classList.remove('hidden');
+
+    // redirecciona
+    setTimeout(() => {
+        window.location.href = "index.html";
+    }, 2500);
 });
