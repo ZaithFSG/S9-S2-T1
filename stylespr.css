@@ -1,0 +1,35 @@
+body {
+    font-family: sans-serif;
+    background-color: #f0f2f5;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+header {
+    margin-bottom: 30px;
+}
+
+.contenedor-tarjetas {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tarjeta {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.tarjeta h2 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.profesion {
+    color: #007bff; 
+    font-weight: bold;
+}
