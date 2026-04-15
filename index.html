@@ -1,11 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulario Pro</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+    <div class="formulario-contenedor">
+        <form id="formcon">
+            <h2>Contáctanos</h2>
+            
+            <div class="input-group">
+                <label for="username">Nombre completo</label>
+                <input type="text" id="username" placeholder="Tu nombre...">
+                <span class="error-msg">Este campo es obligatorio</span>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" placeholder="ejemplo@correo.com">
+                <span class="error-msg">Introduce un correo válido</span>
+            </div>
+
+            <div class="input-group">
+                <label for="message">Mensaje</label>
+                <textarea id="message" rows="4" placeholder="¿En qué podemos ayudarte?"></textarea>
+            </div>
+
+            <button type="submit" id="submitBtn">Enviar Mensaje</button>
+        </form>
+        <div id="successMessage" class="hidden">¡Enviado con éxito!</div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
