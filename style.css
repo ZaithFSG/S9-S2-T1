@@ -24,6 +24,12 @@ body {
     left: 20px;
 }
 
+.left-nav {
+    position: absolute;
+    top: 20px;
+    left: 1750px;
+}
+
 
 .nav-btn {
     text-decoration: none;
